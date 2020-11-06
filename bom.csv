@@ -1,0 +1,12 @@
+Qty;Value;Device;Package;Parts;Description;Price for 1;Price for 100;Price for 1000;LCSC PN;Link
+1;;PINHD-1X4;1X04;JP4;Pin header 1x4 for 0.1 spacing;;$1.13;$8.26;C390680;https://lcsc.com/product-detail/Pin-Header-Female-Header_PINREX-210-91-04GB01_C390680.html
+1;;SCA320-C28H1G;DIP8;ACC1;;;;;;
+1;;SWITCH_PUSHBUTTONC&K_KSS;BTN_CK_KSS;RESETSW;Buttons;$0.30;$18.60;$177.00;C125033;https://lcsc.com/product-detail/Tactile-Switches_ALPS-Electric-SKHUPLE010_C125033.html
+1;100nF;C-USC0805;C0805;C2;CAPACITOR, American symbol;;$0.52;$4.36;C49678;https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html
+1;16MHz;CRYSTALHC49UP;HC49UP;XTAL;CRYSTAL;;$6.49;$56.64;C259047;https://lcsc.com/product-detail/SMD-Crystal-Resonators_ECEC-ZheJiang-E-ast-Crystal-Elec-C16000J119_C259047.html
+1;1K;R-US_R0805;R0805;R1;RESISTOR, American symbol;;$0.18;$1.36;C702831;https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_HKR-Hong-Kong-Resistors-RCT051KFLF_C702831.html
+2;3V;BATTERYCR2540-SMT;CR2450;B1, B2;CR1220 SMT - Digikey: 3001K-ND;$0.44;$27.17;$258.33;C238099;https://lcsc.com/product-detail/Battery-Accessories-Contacts-Springs_Keystone_3002TR_Keystone-3002TR_C238099.html
+1;4.7uF;C-USC0805;C0805;C1;CAPACITOR, American symbol;;$3.11;$27.12;C277499;https://lcsc.com/product-detail/Others_YAGEO-CC0805KKX7R7BB475_C277499.html
+1;7805DT;7805DT;TO252;IC1;Positive VOLTAGE REGULATOR;$0.19;$11.55;$109.22;C174354;https://lcsc.com/product-detail/Dropout-Regulators-LDO_Kodenshi-AUK-SN7805D_C174354.html
+1;ATMEGA328P_TQFP;ATMEGA328P_TQFP;TQFP32-08;U1;Popular 328P in QFP;$1.80;$134.50;$1,260.00;C14877;https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATMEGA328P-AU_ATMEGA328P-AU_C14877.html
+1;PINHD-2X3;PINHD-2X3;2X03;JP1;PIN HEADER;;$3.04;$20.57;C124384;https://lcsc.com/product-detail/Pin-Header-Female-Header_Ckmtw-Shenzhen-Cankemeng-C124384_C124384.html
