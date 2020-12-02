@@ -9294,6 +9294,7 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY12" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="VCC" device=""/>
 <part name="SUPPLY13" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="VCC" device=""/>
 <part name="SUPPLY14" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="VCC" device=""/>
+<part name="SUPPLY15" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -9312,9 +9313,9 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="67.564" y="66.04" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="71.12" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C2" gate="G$1" x="76.2" y="86.36" smashed="yes" rot="R270">
-<attribute name="NAME" x="72.136" y="81.915" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.136" y="79.629" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="91.44" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.376" y="43.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.376" y="41.529" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="76.2" y="99.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="80.01" y="97.5614" size="1.778" layer="95" rot="R180"/>
@@ -9378,11 +9379,11 @@ by exp-lbrs.ulp</description>
 <instance part="SUPPLY6" gate="G$1" x="187.96" y="48.26" smashed="yes">
 <attribute name="VALUE" x="187.96" y="45.085" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="231.14" y="129.54" smashed="yes" rot="R180">
-<attribute name="VALUE" x="231.14" y="132.715" size="1.778" layer="96" rot="R180" align="center"/>
+<instance part="SUPPLY7" gate="G$1" x="236.22" y="129.54" smashed="yes">
+<attribute name="VALUE" x="236.22" y="126.365" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="243.84" y="63.5" smashed="yes" rot="R180">
-<attribute name="VALUE" x="243.84" y="66.675" size="1.778" layer="96" rot="R180" align="center"/>
+<instance part="SUPPLY8" gate="G$1" x="243.84" y="53.34" smashed="yes">
+<attribute name="VALUE" x="243.84" y="50.165" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="53.34" y="81.28" smashed="yes">
 <attribute name="VALUE" x="53.34" y="78.105" size="1.778" layer="96" align="center"/>
@@ -9401,6 +9402,9 @@ by exp-lbrs.ulp</description>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="58.42" y="149.86" smashed="yes">
 <attribute name="VALUE" x="56.515" y="153.035" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="83.82" y="45.72" smashed="yes">
+<attribute name="VALUE" x="83.82" y="42.545" size="1.778" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -9421,21 +9425,13 @@ by exp-lbrs.ulp</description>
 <junction x="185.42" y="50.8"/>
 </segment>
 <segment>
-<pinref part="SUPPLY7" gate="G$1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="127" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="6"/>
 <pinref part="SUPPLY8" gate="G$1" pin="GND"/>
 <wire x1="238.76" y1="55.88" x2="243.84" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="55.88" x2="243.84" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="58.42" y="81.28" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="86.36" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <junction x="63.5" y="83.82"/>
@@ -9460,14 +9456,23 @@ by exp-lbrs.ulp</description>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY11" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="SUPPLY7" gate="G$1" pin="GND"/>
+<wire x1="231.14" y1="121.92" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="132.08" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY15" gate="G$1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="AREFTOCAP" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="AREF"/>
-<wire x1="109.22" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="48.26" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RESET" class="0">
